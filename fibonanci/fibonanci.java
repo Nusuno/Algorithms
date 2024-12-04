@@ -12,13 +12,13 @@ class Fibonanci {
         int f0 = 0;
         int f1 = 1;
 
-        if(n >= 0) {
+        if (n >= 0) {
             System.out.println("f0 = " + f0);
         }
-        if(n >= 1) {
+        if (n >= 1) {
             System.out.println("f1 = " + f1);
         }
-        for(int i = 2; i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
             int fn = f0 + f1;
             System.out.println("f" + i + " = " + fn);
             f0 = f1;
