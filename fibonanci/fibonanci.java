@@ -1,0 +1,5 @@
+package fibonanci;
+
+class Fibonanci {
+    
+}
