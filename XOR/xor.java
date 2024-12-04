@@ -5,18 +5,17 @@ import java.util.Scanner;
 class XOR {
     public static void main(String[] args) {
         Scanner scanIn = new Scanner(System.in);
+        System.out.print("Input p: ");
         int p = scanIn.nextInt();
+        System.out.print("Input q: ");
         int q = scanIn.nextInt();
         scanIn.close();
-
-        if(p == 0 && q == 0) {
-            System.out.println("XOR = " + 0);
-        } else if (p == 0 && q == 1) {
-            System.out.println("XOR = " + 1);
-        } else if ( p == 1 && q == 0) {
-            System.out.println("XOR = " + 1);
-        } else if (p == 1 && q == 1) {
-            System.out.println("XOR = " + 0);
+        if ((p == 0 || p == 1) && (q == 0 || q == 1)) {
+            if (p == q) {
+                System.err.println(p + " XOR " + q + " = " + 0);
+            } else {
+                System.out.println(p + " XOR " + q + " = " + 1);
+            }
         } else {
             System.out.println("Error");
         }
