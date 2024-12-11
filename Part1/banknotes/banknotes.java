@@ -2,7 +2,7 @@ package banknotes;
 
 import java.util.Scanner;
 
-public class banknotes {
+class banknotes {
     public static void main(String[] args){
         Scanner scanIn = new Scanner(System.in);
         System.out.print("Enter amount of money: ");
