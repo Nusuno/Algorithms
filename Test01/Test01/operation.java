@@ -20,25 +20,27 @@ public class operation {
         scanIn.close();
 
         int sum;
-        // System.out.println(o);
-        if(o == "+"){
+        System.out.println(o);
+        if(o.equals("+")){
             sum = x + y;
             System.out.print(sum);
-        } else if (o == "-"){
+        } else if (o.equals("-")){
             sum = x - y;
             System.out.print(sum);
-        } else if (o == "*"){
+        } else if (o.equals("*")){
             sum = x * y;
             System.out.print(sum);
-        } else if (o == "/"){
+        } else if (o.equals("/")){
             sum = x / y;
             System.out.print(sum);
-        } else if (o == "%"){
+        } else if (o.equals("%")){
             sum = x % y;
             System.out.print(sum);
-        } else if (o == "^"){
-            sum = x ^ y;
-            System.out.print(sum);
+        } else if (o.equals("^")){
+            for(int i = y; i <= y; i++){
+                sum = x * x;
+                System.out.print(sum);
+            }
         } else {
             System.out.println("Plase Enter Operation. Try Again.");
         }
